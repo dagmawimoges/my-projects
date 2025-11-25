@@ -1,0 +1,481 @@
+<html>
+<title>CHAMPIONS</title>
+<link rel="icon" type="image/x-icon"
+    href="https://th.bing.com/th/id/OIP.jLYdeWHiDD12JpAivMt5gQHaHa?w=200&h=200&c=7&o=5&dpr=1.1&pid=1.7">
+
+<head>
+    <style>
+        #dgdg {
+            padding-top: 20px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: arial, sans-serif;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .navbarlogo {
+            color: white;
+        }
+
+        .navbar {
+            height: 8vh;
+            width: 100%;
+            background-color: green;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 40;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbaritem ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbaritem li {
+            margin-left: 20px;
+        }
+
+        .navbaritem a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #home {
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-weight: bold;
+            animation: myanimation 10s infinite;
+            padding-top: 8vh;
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color: brown;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        .homecontent {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        #home img {
+            width: 400px;
+            height: auto;
+            margin-right: 40px;
+            border-radius: 10px;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            color: #333;
+            max-width: 600px;
+        }
+
+        #founder image {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            display: flex;
+        }
+        #owners{
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-weight: bold;
+            animation: myanimation 10s infinite;
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color:lime;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+        #aboutus{
+            text-align: center;
+            padding-top: 8vh;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-weight: bold;
+            animation: myanimation 10s infinite;
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color:lime;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        #aboutme h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #aboutme p {
+            font: size 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #services {
+            color: red;
+            width: 100%;
+            height: 100%;
+            font-weight: bold;
+            animation: myanimation 10s infinite;
+            padding-top: 8vh;
+            text-align: center;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color: brown;
+            }
+
+            100% {
+                background-color: red
+            }
+        }
+
+        #services h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #services p {
+            font: size 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            background-color:aqua;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 40px 8px rgba(0, 0, 0, 0, 1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-20px);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: black;
+        }
+        #contactus {
+            padding-top: 8vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-weight: bold;
+            animation: myanimation 10s infinite;
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: lightgray;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: lime;
+            }
+
+            75% {
+                background-color: lightblue;
+            }
+
+            100% {
+                background-color: aqua;
+            }
+        }
+
+        #contactus h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #contactus form {
+            color: white;
+            width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            padding: 30px;
+        }
+
+        #contactus label {
+            width: 100%;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #contactus input,
+        #contactus textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contactus button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contactus button:hover {
+            background-color: darkgreen;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
+        }
+        #champions{
+            text-decoration:none;
+            display:flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbarlogo">
+            <h1 id="span"><span>C</span>HAMPIONS</h1>
+        </div>
+        <div class="navbaritem">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contactus">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="home">
+        <div class="homecontent">
+            <div id="dgdg">
+                <img src="https://th.bing.com/th/id/OIP.jLYdeWHiDD12JpAivMt5gQHaHa?w=200&h=200&c=7&o=5&dpr=1.1&pid=1.7"
+                    alt="champions">
+            </div>
+            <div>
+                <h2>Welcome to Champions</h2>
+                <p>
+                    Our team,the Champions,consist of a group of young,energetic and smart members inspired by technological advancments in computer science,robotics and coding.
+                </p>
+                <a href="http://127.0.0.1:5500/website/champions1.html#owners" id="champions">Team Members</a>
+                <br><br>
+                <a href="http://127.0.0.1:5500/project.html" id="champions" target="_blank" >Our project</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="aboutus">
+        <h2>About us</h2>
+     <p>We strive to be the best web page designers based on the training and coaching we received from Abugida Robotics and Technology Center.<br><br>We have gained useful experience in HTML and CSS coding.</p><br><br>
+      <a href="http://127.0.0.1:5500/website/champions1.html#owners" id="champions">Team Members</a>
+    </section>
+    <hr>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Champions provides web page design services for individuals,businesses and public institutes</p>
+        <div class="services-list">
+            <div class="service-item">
+                <h3></h3>
+                <p> We can create attractive web pages Using web designing tools<br></p>
+            </div>
+            <div class="service-item">
+                <h3></h3>
+                <p>We first define the goal of the web page by discussion with the client.then we create  content and scope</p>
+            </div>
+            <div class="service-item">
+                <h3></h3>
+                <p>We use a combnantion of quality images and texts in well designed layout</p>
+            </div>
+            <div class="service-item">
+                <p>
+                    Finally we test and launch the website. 
+                </p>
+            </div>
+            <div id="champions">
+            </div>
+        </div>
+    </section>
+    <section id="owners">
+        <div id="images">
+        <img src="kirubel.jpg" width="300px" alt="kirubel">
+        <h1>Kirubel</h1>
+    </div>
+    <div>
+        <img src="20240905_033204.jpg" width="225px" alt="kaleb">
+        <h1>Kaleb</h1>
+    </div>
+    <div>
+        <img src="adonyas.jpg" width="220px" alt="adonyas">
+        <h1>Adonyas</h1>
+    </div>
+    <div>
+        <img src="dagmawi.jpg" width="225px" alt="dagmawi">
+        <h1>Dagmawi</h1>
+    </div>
+    <div>
+        <img src="adonay.jpg" width="210px" alt="adonay">
+        <h1>Adonay</h1>
+    </div>
+</div>
+    </section>
+    <hr>
+    <section id="contactus">
+        <h2>Contact Us</h2>
+        <form method="post" enctype="text/plain" action="mailto:dagmawimoges2143@gmail.com"
+            subject=subject&message=message">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="text" name="text">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <label for="message">Message</label>
+            <textarea for="message" id="message" name="message" rows="4"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="conatact-info">
+            <p>Location:Winget,Addis Ababa</p>
+            <p>Phone:+251 911 126 397 <br>or +251 913 178 935</p>
+        </div>
+    </section>
+</body>
+
+</html>
